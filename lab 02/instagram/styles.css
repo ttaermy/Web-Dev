@@ -23,7 +23,7 @@ body {
 .logo {
     position: absolute;
     top: 12px;
-    left: 20px;
+    left: 10px;
 }
 .left {
     flex: 1;
