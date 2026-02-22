@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Store</title>
+</head>
+<body>
+<div class="card">
+  <img class="main-image" [src]="selectedImage" />
+
+  <div class="thumbs">
+    <img *ngFor="let img of product.images"
+         [src]="img"
+         (click)="setImage(img)"
+         class="thumb">
+  </div>
+
+  <h3>{{product.name}}</h3>
+  <p>{{product.description}}</p>
+
+  <div class="meta">
+    <span class="price">{{product.price | number}} KZT</span>
+    <span class="rating">★ {{product.rating}}</span>
+  </div>
+
+  <div class="actions">
+    <a [href]="product.link || '#'" target="_blank">View</a>
+    <button (click)="shareWhatsApp()">WA</button>
+    <button (click)="shareTelegram()">TG</button>
+  </div>
+</div>
+</body>
+</html>
