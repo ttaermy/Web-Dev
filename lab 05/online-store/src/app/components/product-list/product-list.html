@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Store</title>
+</head>
+<body>
+<div *ngIf="products().length === 0" class="empty">
+  No products in this category
+</div>
+
+<div class="grid">
+  <app-product-item
+    *ngFor="let product of products()"
+    [product]="product"
+    (remove)="removeProduct($event)">
+  </app-product-item>
+</div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.image {
+  height: 170px;
+  object-fit: contain;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.product-link {
+  text-decoration: none;
+  color: #1e293b;
+  transition: 0.2s ease;
+  font-weight: 700;
+}
+
+.product-link:hover {
+  color: #dabdef;
+  text-decoration: underline;
+}
+
+.description {
+  font-size: 14px;
+  color: #475569;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.price {
+  color: #0f172a;
+}
+
+.rating {
+  color: #eabf7a;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.heart {
+  font-size: 18px;
+  color: #94a3b8;
+  transition: 0.2s ease;
+}
+
+.heart.liked {
+  color: #cf4984;
+}
+
+.heart:hover {
+  transform: scale(1.2);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.icon-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: white;
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
+.whatsapp:hover {
+  background: #1ebe5d;
+  transform: scale(1.1);
+}
+
+.telegram {
+  background: #229ED9;
+}
+
+.telegram:hover {
+  background: #1c8ec4;
+  transform: scale(1.1);
+}
+
+.delete-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #b91c1c;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #ef4444;
+  color: white;
+  transform: scale(1.1);
+}

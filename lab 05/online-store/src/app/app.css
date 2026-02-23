@@ -1,0 +1,38 @@
+.container {
+  padding: 30px;
+  background: linear-gradient(180deg, #f0fdfa, #f5f3ff);
+  min-height: 100vh;
+}
+
+.categories {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.categories button {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #e2e8f0;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.categories button:hover {
+  background: #cbd5e1;
+}
+
+/* SELECTED CATEGORY */
+.categories button.active {
+  background: linear-gradient(90deg, #fbcfe8, #e9d5ff);
+  color: #c389a2;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.welcome {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+}
