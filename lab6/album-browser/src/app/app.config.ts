@@ -1,6 +1,7 @@
 import { ApplicationConfig } from '@angular/core';
 import { provideRouter, Routes } from '@angular/router';
 import { provideHttpClient } from '@angular/common/http';
+import { provideZoneChangeDetection } from '@angular/core';
 
 import { HomeComponent } from './home/home';
 import { AboutComponent } from './about/about';
@@ -19,6 +20,7 @@ const routes: Routes = [
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideZoneChangeDetection(),
     provideRouter(routes),
     provideHttpClient()
   ]
