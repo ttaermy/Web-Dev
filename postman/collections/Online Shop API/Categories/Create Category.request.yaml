@@ -1,0 +1,11 @@
+$kind: http-request
+name: Create Category
+url: http://127.0.0.1:8000/api/categories/
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "name": "Electronics"
+    }
+order: 4428508198651950

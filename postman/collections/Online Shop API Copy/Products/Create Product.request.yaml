@@ -1,0 +1,16 @@
+$kind: http-request
+name: Create Product
+url: http://127.0.0.1:8000/api/products/
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "name": "Laptop",
+      "price": 120000,
+      "category": 5,
+      "description": "Macbook air M4",
+      "count": 10,
+      "is_active": true
+    }
+order: 1775504629106
